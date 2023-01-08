@@ -6,3 +6,5 @@ RUN localedef -f UTF-8 -i ja_JP ja_JP
 USER postgres
 ENV LANG=ja_JP.UTF-8
 ENV TZ=Asia/Tokyo
+COPY . /app
+CMD ["sh", "run.sh"]
